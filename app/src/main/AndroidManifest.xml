@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permission untuk akses lokasi -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
@@ -17,12 +16,10 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
 
-        <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCXq7xWvdRpaIv6kgcmnvsFjGiAEBPiNtE" />
 
-        <!-- MapsActivity sebagai launcher activity -->
         <activity
             android:name=".MapsActivity"
             android:exported="true"
@@ -32,12 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- MainActivity tetap ada tapi tidak jadi launcher -->
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"/>
     </application>
-
 </manifest>
