@@ -16,9 +16,10 @@
         android:theme="@style/Theme.Material3.DayNight"
         tools:targetApi="31">
 
+        <!-- API Key sekarang menggunakan placeholder dari gradle -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCXq7xWvdRpaIv6kgcmnvsFjGiAEBPiNtE" />
+            android:value="${MAPS_API_KEY}" />
 
         <activity
             android:name=".MapsActivity"
